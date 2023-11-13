@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEvents"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnEvent1" Content="Event Intro" HorizontalAlignment="Left" Margin="49,39,0,0" VerticalAlignment="Top" Height="61" Width="168" Click="BtnEvent1_Click"/>
+        <ListBox x:Name="lstMessages" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="367,39,152,217"/>
+        <ScrollViewer Margin="49,128,583,186">
+            <StackPanel x:Name="spButtons" />
+        </ScrollViewer>
+
+    </Grid>
+</Window>
